@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 const ClientError = require('../../exceptions/ClientError');
 
 class ExportsHandler {
@@ -47,7 +46,6 @@ class ExportsHandler {
       });
 
       response.code(500);
-      console.error(error);
 
       return response;
     }
