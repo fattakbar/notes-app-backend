@@ -35,7 +35,6 @@ class CollaborationsHandler {
       return response;
     } catch (error) {
       if (error instanceof ClientError) {
-        console.log('a');
         const response = h.response({
           status: 'fail',
           message: error.message,
